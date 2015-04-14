@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ECFC6D0D-3F35-45F4-B139-5FCCFDAF49D6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ToDo.iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AC35FA2BE731F82B2383DE1D174EAFC84604FB7E</key>
+		<string>https://contoso.madhurig.tfsallin.net/DefaultCollection/_git/Contoso</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ToDo.iOS/ToDo.iOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AC35FA2BE731F82B2383DE1D174EAFC84604FB7E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://contoso.madhurig.tfsallin.net/DefaultCollection/_git/Contoso</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AC35FA2BE731F82B2383DE1D174EAFC84604FB7E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AC35FA2BE731F82B2383DE1D174EAFC84604FB7E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Contoso</string>
+		</dict>
+	</array>
+</dict>
+</plist>

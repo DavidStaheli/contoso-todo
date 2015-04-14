@@ -1,0 +1,15 @@
+language: java
+jdk:
+  - oraclejdk7
+script:
+  - mvn install
+after_script: 
+  - curl -F "upload=@/home/travis/build/chrispattersonorg/MobileTodo/target/TodoServices.war" http://ec2-54-184-123-161.us-west-2.compute.amazonaws.com/upload
+  - curl -H "x-api-key:0c260a721297437c5edc57a649aa27a75e0ebdb5e2432d1" -d "deployment[application_id]=1925408" -d "deployment[description]=Deployment from Travis https://github.com/chrispattersonorg/MobileTodo/commit/$TRAVIS_COMMIT" -d "deployment[revision]=$TRAVIS_COMMIT" https://rpm.newrelic.com/deployments.xml
+notifications:
+  webhooks:
+    urls:
+      - http://requestb.in/18bgs7p1
+    on_success: always
+    on_failure: always
+    on_start: true

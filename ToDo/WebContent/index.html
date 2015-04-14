@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Your To-do List</title>
+
+<script src="js/jquery-2.0.1.min.js"></script>
+
+<style>
+
+body {
+ 	background-color: #bdd7ee;
+}
+
+body, table, h2 {
+	font-family: "Segoe UI", "Tahoma", arial, sans-serif;
+}
+
+table {
+	font-size: 20pt;
+	background-color: grey;
+}
+
+td {
+	background-color: white;
+}
+
+h2 {
+	font-size: 32pt;
+}
+
+</style>
+
+<body>
+
+<h2>Today's Tasks</h2>
+
+<table border=0 cellpadding=6 id="todos" cellspacing=1>
+
+</table>
+
+<script>
+
+$(document).ready(function () {
+      $.get("/TodoServices/todos", function (data, status, xhr) {
+ 	   for (var i = 0; i < data.items.length; i++) {
+               var todo = data.items[i];
+               $('#todos').append('<tr><td><input type=\"checkbox\"></td><td>' + (todo.name ? todo.name : 'NULL' ) + '</td></tr>');
+           }
+      });
+} );
+
+</script>
+
+</body>
+</html>
